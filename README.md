@@ -7,6 +7,7 @@ A hash table excels at single-course lookups, with average-case O(1) performance
 A binary search tree (BST) balances both needs. A balanced BST provides O(log n) insertions and lookups, and its in-order traversal produces a sorted list in O(n) without additional sorting. The main risk is that a naive BST can degrade to O(n) operations if it becomes unbalanced, but that can be avoided.
 
 Project Two: 
+
 // print an alphanumeric list of all CS and MATH courses
 static void printCourseListCS(const BST& tree) {
     vector<Course> all;
@@ -21,7 +22,7 @@ static void printCourseListCS(const BST& tree) {
 }
 
 **1. What was the problem you were solving in the projects for this course?**
-   The problem I was solving was how to efficiently store, search, and display course data for an advising program. The program needed to allow users to load data from a file, look up individual courses, and print    out a full list of courses in alphanumeric order.
+   The problem I was solving was how to efficiently store, search, and display course data for an advising program. The program needed to allow users to load data from a file, look up individual courses, and print out a full list of courses in alphanumeric order.
 **2. How did you approach the problem? Consider why data structures are important to understand.**
    I approached the problem by comparing different data structures, which are vectors, hash tables, and binary search trees. Each had strengths and weaknesses, but the BST was the best fit because it supports efficient lookups while also producing a sorted list through in-order traversal. This showed me why understanding data structures is important, the right data structure makes a program both faster and easier to manage.
 **3. How did you overcome any roadblocks you encountered while going through the activities or project?**
